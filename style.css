@@ -1,0 +1,87 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./boxed-water.jpg);
+    background-size: cover;
+    background-position: center center ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+h1{
+font-size:  4rem;
+
+}
+
+.countdown-container {
+display: flex ;
+margin-top: 2rem;
+flex-wrap: wrap;
+}
+
+.days-c,.hours-c,.minutes-c,.seconds-c{
+    margin: 0 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.big-text{
+    font-weight: bolder;
+    font-size: 2rem;
+    line-height: 1;
+
+}
+#newYear{
+    font-size: 3rem;
+    font-weight: bold;
+    color: blue;
+}
+.anime-new-year{
+    animation: newyear 2s 1;
+}
+
+@keyframes newyear {
+    from{
+        margin-left: -100%;
+    }
+    to{
+        margin-left: 0%;
+        color:yellow;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    h1{
+        font-size: 2rem;
+    }
+
+    .days-c,.hours-c,.minutes-c,.seconds-c{
+        margin: 0 1rem;
+    }
+
+    .big-text{
+        
+        font-size: 2rem;
+        line-height: 1;
+
+    }
+
+    #newYear{
+        font-size: 2rem;
+    }
+    
+}
+
